@@ -3,5 +3,5 @@ fs_fish:
     prefix:   /fish
 
 fs_homepage:
-    path:     /hello/
+    path:     /
     defaults: { _controller: FsBundle:Default:index }
