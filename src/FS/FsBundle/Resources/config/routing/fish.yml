@@ -1,0 +1,30 @@
+fish:
+    path:     /
+    defaults: { _controller: "FsBundle:Fish:index" }
+
+fish_show:
+    path:     /{id}/show
+    defaults: { _controller: "FsBundle:Fish:show" }
+
+fish_new:
+    path:     /new
+    defaults: { _controller: "FsBundle:Fish:new" }
+
+fish_create:
+    path:     /create
+    defaults: { _controller: "FsBundle:Fish:create" }
+    methods:  POST
+
+fish_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "FsBundle:Fish:edit" }
+
+fish_update:
+    path:     /{id}/update
+    defaults: { _controller: "FsBundle:Fish:update" }
+    methods:  [POST, PUT]
+
+fish_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "FsBundle:Fish:delete" }
+    methods:  [POST, DELETE]

@@ -1,0 +1,4 @@
+services:
+#    fs.example:
+#        class: FS\FsBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

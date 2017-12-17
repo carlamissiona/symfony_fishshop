@@ -1,0 +1,7 @@
+fs_fish:
+    resource: "@FsBundle/Resources/config/routing/fish.yml"
+    prefix:   /fish
+
+fs_homepage:
+    path:     /hello/
+    defaults: { _controller: FsBundle:Default:index }

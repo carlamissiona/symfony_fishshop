@@ -1,0 +1,4 @@
+fs:
+    resource: "@FsBundle/Resources/config/routing.yml"
+    prefix:   /
+
