@@ -5,13 +5,12 @@ namespace FS\FsBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Fish
+ * FishFeeds
  *
  * @ORM\Table()
  * @ORM\Entity
- * 
  */
-class Fish
+class FishFeeds
 {
     /**
      * @var integer
@@ -30,11 +29,11 @@ class Fish
     private $name;
 
     /**
-     * @var integer
+     * @var string
      *
-     * @ORM\Column(name="food", type="integer")
+     * @ORM\Column(name="price", type="string", length=255)
      */
-    private $food;
+    private $price;
 
 
     /**
@@ -52,7 +51,7 @@ class Fish
      *
      * @param string $name
      *
-     * @return Fish
+     * @return FishFeeds
      */
     public function setName($name)
     {
@@ -72,27 +71,27 @@ class Fish
     }
 
     /**
-     * Set food
+     * Set price
      *
-     * @param integer $food
+     * @param string $price
      *
-     * @return Fish
+     * @return FishFeeds
      */
-    public function setFood($food)
+    public function setPrice($price)
     {
-        $this->food = $food;
+        $this->price = $price;
 
         return $this;
     }
 
     /**
-     * Get food
+     * Get price
      *
-     * @return integer
+     * @return string
      */
-    public function getFood()
+    public function getPrice()
     {
-        return $this->food;
+        return $this->price;
     }
 }
 

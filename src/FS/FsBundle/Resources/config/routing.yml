@@ -1,3 +1,7 @@
+fs_fishfeeds:
+    resource: "@FsBundle/Resources/config/routing/fishfeeds.yml"
+    prefix:   /fishfeeds
+
 fs_fish:
     resource: "@FsBundle/Resources/config/routing/fish.yml"
     prefix:   /fish

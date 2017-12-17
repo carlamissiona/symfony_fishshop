@@ -1,15 +1,41 @@
 {% extends '::base.html.twig' %}
 
 {% block body -%}
-    <h1>Fish creation</h1>
+ <div id="features-wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="12u 12u(medium)">
 
-    {{ form(form) }}
+                                <!-- Box -->
+                                    <section class="box feature">
+                                        <a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+                                        <div class="inner">
+                                            <header>
+                                                <h2>Add a fish</h2>
+                                                <p>Big Fish, small fish and turtles.</p>
+                                            </header>
+                                            <p>
+                                            	  {{ form(form) }}
 
-        <ul class="record_actions">
-    <li>
-        <a href="{{ path('fish') }}">
-            Back to the list
-        </a>
-    </li>
-</ul>
-{% endblock %}
+											        <ul class="record_actions">
+											    <li>
+											        <a href="{{ path('fish') }}">
+											            Back to the list
+											        </a>
+											    </li>
+											</ul>
+
+                                            </p>
+                                        </div>
+                                    </section>
+
+                            </div>
+                            
+                             
+                        </div>
+                    </div>
+    </div>
+ 
+    
+    {% endblock %}
+
